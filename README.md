@@ -1,25 +1,34 @@
 # MCP Server
 
-Learn how to deploy your own MCP server with Ink using a simple prompt.
+A simple Model Context Protocol (MCP) server with weather and time tools, ready to deploy.
+
+## Setup
+
+```bash
+npm install
+node server.js
+```
+
+The MCP endpoint is available at `http://localhost:3000/mcp`.
+
+## Tools
+
+- **get_weather** - Get mock weather data for any city
+- **get_time** - Get the current time in any timezone
+
+## Deploy with Ink
+
+Connect the [Ink MCP server](https://docs.ml.ink/quick-start) to your AI agent and prompt:
+
+> Deploy this app with Ink.
 
 ## Tutorial
 
-Full step-by-step tutorial: [docs.ml.ink/examples/ai-and-mcp/mcp-server](https://docs.ml.ink/examples/ai-and-mcp/mcp-server)
-
-### Prerequisites
-
-- An [Ink](https://ml.ink) account
-- Ink MCP connected to your AI agent ([setup guide](https://docs.ml.ink/quick-start))
-
-### Quick Deploy
-
-1. Connect Ink MCP to your agent
-2. Prompt: "Build an MCP server in TypeScript that provides tools for querying a public weather API. Include tools for current weather and forecast."
-3. Prompt: "Deploy with Ink"
+Full tutorial: [docs.ml.ink/examples/ai/mcp-server](https://docs.ml.ink/examples/ai/mcp-server)
 
 ## About Ink
 
-[Ink](https://ml.ink) is a deployment platform built for AI agents. Connect the Ink MCP server to any AI coding agent and deploy applications, manage domains, databases, and infrastructure — all through natural language prompts.
+[Ink](https://ml.ink) is a deployment platform built for AI agents.
 
 - **Website**: [ml.ink](https://ml.ink)
 - **Documentation**: [docs.ml.ink](https://docs.ml.ink)
